@@ -1,0 +1,64 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Btn.png" />
+    <None Remove="Resources\BtnHover.png" />
+    <None Remove="Resources\Enemy1.png" />
+    <None Remove="Resources\Explode.gif" />
+    <None Remove="Resources\Explode.wav" />
+    <None Remove="Resources\GalaxyInvader_Background.png" />
+    <None Remove="Resources\Life.png" />
+    <None Remove="Resources\LifeBroke.png" />
+    <None Remove="Resources\MenuBack.png" />
+    <None Remove="Resources\Projectile1.png" />
+    <None Remove="Resources\Projectile2.png" />
+    <None Remove="Resources\Shoot1.wav" />
+    <None Remove="Resources\Shoot2.wav" />
+    <None Remove="Resources\SpaceShip.png" />
+    <None Remove="Resources\SpaceShipIcon.ico" />
+    <None Remove="Resources\Thruster.gif" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Btn.png" />
+    <EmbeddedResource Include="Resources\BtnHover.png" />
+    <EmbeddedResource Include="Resources\Enemy1.png" />
+    <EmbeddedResource Include="Resources\Explode.gif" />
+    <EmbeddedResource Include="Resources\Explode.wav" />
+    <EmbeddedResource Include="Resources\GalaxyInvader_Background.png" />
+    <EmbeddedResource Include="Resources\Life.png" />
+    <EmbeddedResource Include="Resources\LifeBroke.png" />
+    <EmbeddedResource Include="Resources\MenuBack.png" />
+    <EmbeddedResource Include="Resources\Projectile1.png" />
+    <EmbeddedResource Include="Resources\Projectile2.png" />
+    <EmbeddedResource Include="Resources\Shoot1.wav" />
+    <EmbeddedResource Include="Resources\Shoot2.wav" />
+    <EmbeddedResource Include="Resources\SpaceShip.png" />
+    <EmbeddedResource Include="Resources\SpaceShipIcon.ico" />
+    <EmbeddedResource Include="Resources\Thruster.gif" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
